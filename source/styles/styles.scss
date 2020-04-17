@@ -1,1 +1,113 @@
 @import "_reset";
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    overflow-y: scroll;
+
+    div {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    p {
+        width: 1830px;
+        margin: 20px auto 35px;
+        text-align: center;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 140px;
+        margin-right: 5px;
+        margin-bottom: 30px;
+        text-decoration: none;
+        background-color: whitesmoke;
+        color: black;
+        scroll-behavior: smooth;
+        transition: all 1s ease;
+    }
+
+    .btn-dark {
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    .btn-dark:hover {
+        background-color: whitesmoke;
+        color: black;
+    }
+
+    a:hover {
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    i {
+        margin-left: 5px;
+    }
+}
+
+#slider-1 {
+    background-color:rgb(57, 97, 47);
+
+    h1 {
+        animation: h1-slidein 2s ease-in-out;
+    }
+
+    p {
+        animation: text-slidein 2s ease-in-out;
+    }
+}
+
+#slider-2 {
+    background-color:rgb(126, 151, 207);
+}
+
+#slider-3 {
+    background-color:rgb(39, 151, 253);
+}
+
+#slider-4 {
+    background-color:rgb(151, 149, 151);
+}
+
+@keyframes h1-slidein {
+    from {
+        transform: translateY(-180px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes text-slidein {
+    from {
+        transform: translatex(-1800px);
+    }
+
+    to {
+        transform: translatex(0px);
+    }
+}
